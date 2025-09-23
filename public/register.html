@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="/public/css/login-register.css">
+        <title>Регистрация в системе | ПОГОДА - и точка!</title>
+    </head>
+    <body>
+        <h1>Создание аккаунта «ПОГОДА - и точка!»</h1>
+        <form method="post" action="/register">
+            <div class="form-elem">
+                <label for="username">Имя пользователя</label>
+                <input type="text" name="username" id="username" required />
+            </div>
+            <div class="form-elem">
+                <label for="password">Пароль</label>
+                <input type="password" name="password" id="password" required />
+            </div>
+            <div class="form-elem">
+                <label for="password2">Повтор пароля</label>
+                <input type="password" name="password2" id="password2" required />
+            </div>
+            <div class="form-elem">
+                <input class="btn-submit" type="submit" name="submit" id="submit" value="Создать аккаунт" />
+            </div>
+        </form>
+        <a class="btn-to-register" href="/login">Войти в существующий аккаунт</a>
+    </body>
+    <footer>
+        <p>Все права защищены, 2025</p>
+    </footer>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="/public/css/main-page.css">
+        <title>Ваша погода | ПОГОДА - и точка!</title>
+    </head>
+    <body class="{{body_class}}">
+        <h1>Здравствуйте, {{username}}!</h1>
+        <p>Добро пожаловать в вашу уютную комнату! Выбирайте погоду по настроению.</p>
+        <form action="/" method="post">
+            <div class="form-elem">
+                <label for="weather">Погода на сегодня</label>
+                <select name="weather" id="weather">
+                    <option value="sunny" >Солнечная</option>
+                    <option value="cloudy">Облачная</option>
+                    <option value="rainy">Дождливая</option>
+                    <option value="thunder">Грозовая</option>
+                    <option value="snowy">Снежная</option>
+                </select>
+            </div>
+            <div class="form-elem">
+                <input type="submit" value="Сохранить">
+            </div>
+        </form>
+        <footer>
+            <p>Все права защищены, 2025</p>
+        </footer>
+    </body>
+</html>
