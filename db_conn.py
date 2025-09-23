@@ -20,6 +20,11 @@ class DBConnection:
         self.dbcon.commit()
         return cursor.lastrowid
 
+    def update(self, query):
+        cursor = self.dbcon.cursor()
+        cursor.execute(query)
+        self.dbcon.commit()
+
     def delete(self, query):
         cursor = self.dbcon.cursor()
         cursor.execute(query)
