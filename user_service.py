@@ -19,6 +19,7 @@ class UserService:
         res = self.con.select(f"SELECT * FROM users WHERE usr_username='{username}'")
         if len(res) == 0:
             return None
+        print(f"Selected user: {res[0][1]}")
         return User(res[0][0], res[0][1], res[0][2], res[0][3])
 
     def add_new_user(self, user: User):

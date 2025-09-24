@@ -8,7 +8,7 @@
     <body class="{{body_class}}">
         <h1>Здравствуйте, {{username}}!</h1>
         <p>Добро пожаловать в вашу уютную комнату! Выбирайте погоду по настроению.</p>
-        <form action="/" method="post">
+        <form class="weather-form" action="/" method="post">
             <div class="form-elem">
                 <label for="weather">Погода на сегодня</label>
                 <select name="weather" id="weather">
@@ -23,6 +23,11 @@
                 <input type="submit" value="Сохранить">
             </div>
         </form>
+        <div class="logout-container">
+            <form action="/logout" method="get">
+                <button type="submit" class="logout-button">Выйти из аккаунта</button>
+            </form>
+        </div>
         <footer>
             <p>Все права защищены, 2025</p>
         </footer>

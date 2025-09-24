@@ -18,6 +18,12 @@ h11==0.16.0
     # via uvicorn
 idna==3.10
     # via anyio
+itsdangerous==2.2.0
+    # via -r requirements.in
+jinja2==3.1.6
+    # via -r requirements.in
+markupsafe==3.0.2
+    # via jinja2
 mysql-connector-python==9.4.0
     # via -r requirements.in
 pydantic==2.11.9
