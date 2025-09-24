@@ -12,11 +12,11 @@
             <div class="form-elem">
                 <label for="weather">Погода на сегодня</label>
                 <select name="weather" id="weather">
-                    <option value="sunny" >Солнечная</option>
-                    <option value="cloudy">Облачная</option>
-                    <option value="rainy">Дождливая</option>
-                    <option value="thunder">Грозовая</option>
-                    <option value="snowy">Снежная</option>
+                    <option value="sunny" {% if body_class == "sunny" %}selected{% endif %}>Солнечная</option>
+                    <option value="cloudy" {% if body_class == "cloudy" %}selected{% endif %}>Облачная</option>
+                    <option value="rainy" {% if body_class == "rainy" %}selected{% endif %}>Дождливая</option>
+                    <option value="thunder" {% if body_class == "thunder" %}selected{% endif %}>Грозовая</option>
+                    <option value="snowy" {% if body_class == "snowy" %}selected{% endif %}>Снежная</option>
                 </select>
             </div>
             <div class="form-elem">

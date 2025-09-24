@@ -101,6 +101,20 @@ input[type="submit"] {
   animation: pulse 2s infinite;
 }
 
+.error-message {
+  color: red;
+  font-size: 0.85em;
+  margin-top: 5px;
+  display: none;
+}
+
+.error-message-visible {
+  color: red;
+  font-size: 0.85em;
+  margin-top: 5px;
+  display: block;
+}
+
 @media (max-width: 600px) {
   form {
     width: 90%;

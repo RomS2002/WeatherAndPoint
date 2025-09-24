@@ -11,10 +11,12 @@
             <div class="form-elem">
                 <label for="username">Имя пользователя</label>
                 <input type="text" name="username" id="username" required />
+                <div class="error-message{% if username_error %}-visible{% endif %}" id="username-error">Пользователь с таким именем не найден</div>
             </div>
             <div class="form-elem">
                 <label for="password">Пароль</label>
                 <input type="password" name="password" id="password" required />
+                <div class="error-message{% if password_error %}-visible{% endif %}" id="password-error">Пароль неверный</div>
             </div>
             <div class="form-elem">
                 <input class="btn-submit" type="submit" name="submit" id="submit" value="Войти" />

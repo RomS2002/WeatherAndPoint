@@ -96,39 +96,39 @@ footer {
 }
 
 /* Weather Themes */
-.sunny_weather {
+.sunny {
   background-color: #FFDA63;
 }
 
-.cloudy_weather {
+.cloudy {
   background-color: #B0BEC5;
 }
 
-.rainy_weather {
+.rainy {
   background-color: #90A4AE;
   color: white; /* Adjust text color for better visibility */
 }
 
-.rainy_weather h1,
-.rainy_weather p,
-.rainy_weather label,
-.rainy_weather footer {
+.rainy h1,
+.rainy p,
+.rainy label,
+.rainy footer {
   color: white;
 }
 
-.thunder_weather {
+.thunder {
   background-color: #607D8B;
   color: white; /* Adjust text color for better visibility */
 }
 
-.thunder_weather h1,
-.thunder_weather p,
-.thunder_weather label,
-.thunder_weather footer {
+.thunder h1,
+.thunder p,
+.thunder label,
+.thunder footer {
   color: white;
 }
 
-.snowy_weather {
+.snowy {
   background-color: #ECEFF1;
 }
 
